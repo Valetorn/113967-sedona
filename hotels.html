@@ -18,7 +18,7 @@
 		<script src="js/less.js" type="text/javascript"></script>
 	</head>
 	
-	<body>
+	<body class="hotels">
 		<div class="wrapper">
 			<header class="main-header">
 				<nav class="main-menu">
@@ -44,9 +44,263 @@
 				</nav>
 
 				<figure class="logo">
-					<img src="img/logo.png" alt="Sedona" width="67" height="56">
+					<a href="index.html" class="logo__link">
+						<img src="img/logo.png" alt="Sedona" width="67" height="56">
+					</a>	
 				</figure>
 			</header>
+			
+			<main>
+				<article class="filter">
+					<figure class="filter__background">
+						<img src="#" alt="Sedona">
+					</figure>
+					
+					<form action="#" action="post" class="filter__form">
+						<div class="structure">
+							<div class="filter__title">
+								Инфраструктура:
+							</div>
+							
+							<ul class="filter__navigation structure__navigation">
+								<li class="filter__item structure__item">
+									<label for="pool" class="filter__label structure__label">Бассейн</label>
+									
+									<input type="checkbox" name="pool" id="pool" class="filter__input structure__input">
+								</li>
+								
+								<li class="filter__item structure__item">
+									<label for="parking" class="filter__label structure__label">Парковка</label>
+									
+									<input type="checkbox" name="parking" id="parking" class="filter__input structure__input">
+								</li>
+								
+								<li class="filter__item structure__item">
+									<label for="wi-fi" class="filter__label structure__label">Wi-fi</label>
+									
+									<input type="checkbox" name="wi-fi" id="wi-fi" class="filter__input structure__input">
+								</li>
+							</ul>
+						</div>
+						
+						<div class="housing">
+							<div class="filter__title">
+								Тип жилья:
+							</div>
+							
+							<ul class="filter__navigation housing__navigation">
+								<li class="filter__item housing__item">
+									<label for="hotel" class="filter__label housing__label">Гостиница</label>
+									
+									<input type="radio" name="housing" id="hotel" class="filter__input housing__input">
+								</li>
+								
+								<li class="filter__item housing__item">
+									<label for="motel" class="filter__label housing__label">Мотель</label>
+									
+									<input type="radio" name="housing" id="motel" class="filter__input housing__input">
+								</li>
+								
+								<li class="filter__item housing__item">
+									<label for="apartments" class="filter__label housing__label">Апартаменты</label>
+									
+									<input type="radio" name="housing" id="apartments" class="filter__input housing__input">
+								</li>
+							</ul>
+						</div>
+						
+						<div class="cost">
+							<div class="filter__title">
+								Стоимость в сутки(Р):
+							</div>
+							
+							<div class="price-control">
+								<label for="min-price" class="price-control__label label-min">От</label>
+								
+								<input type="text" name="min-price" id="min-price" value="0" class="price-control__price price-min">
+								
+								<label for="max-price" class="price-control__label label-max">До</label>
+								
+								<input type="text" name="max-price" id="max-price" value="3000" class="price-control__price price-max">
+							</div>
+							
+							<div class="range-control">
+								<div class="range-control__scale">
+									<div class="range-control__bar">
+										<div class="range-control__toggle toggle-min"></div>
+										
+										<div class="range-control__toggle toggle-max"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<button type="submit" name="filter-sub" class="filter-btn">Показать</button>
+					</form>
+				</article>
+				
+				<section class="sort">
+					<ul class="sort__navigation">
+						<li class="sort__item">
+							<div class="found">
+								Найдено:
+								<span class="found__number">
+									3
+								</span>
+							</div>
+						</li>
+						
+						<li class="sort__item sort__item--black">
+							Сортирока
+						</li>
+						
+						<li class="sort__item">
+							<a href="#" class="sort__link">
+								По цене
+							</a>
+						</li>
+						
+						<li class="sort__item">
+							<a href="#" class="sort__link">
+								По типу
+							</a>
+						</li>
+						
+						<li class="sort__item">
+							<a href="#" class="sort__link">
+								По рейтингу
+							</a>
+						</li>
+						
+						<li class="sort__item">
+							<div class="arrows">
+								<div class="arrow arrow--top"></div>
+								
+								<div class="arrow arrow--down"></div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				
+				<section class="show-hotels">
+					<div class="show-hotels__content">
+						<figure class="show-hotels__logo">
+							<img src="#" alt="Amara Resort &amp; Spa">
+						</figure>
+						
+						<h2 class="show-hotels__title">
+							Amara Resort &amp; Spa
+						</h2>
+						
+						<div class="btn-container btn-container-left">
+							<div class="btn-container__sign">
+								Гостиница
+							</div>
+							
+							<a href="#" class="show-hotels__btn btn-blue">Подробнее</a>
+						</div>
+						
+						<div class="btn-container btn-container-right">
+							<div class="btn-container__sign">
+								0т 3500 Р.
+							</div>
+							
+							<a href="#" class="show-hotels__btn btn-brown">Забронировать</a>
+						</div>
+						
+						<div class="rating">
+							<figure class="rating__stars">	
+								<img src="#" alt="Stars">
+							</figure>
+
+							<div class="rating__value">
+								Рейтинг:
+								<span class="evaluation">
+									8,5
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="show-hotels__content">
+						<figure class="show-hotels__logo">
+							<img src="#" alt="Desert Quail Inn">
+						</figure>
+						
+						<h2 class="show-hotels__title">
+							Desert Quail Inn
+						</h2>
+						
+						<div class="btn-container btn-container-left">
+							<div class="btn-container__sign">
+								Мотель
+							</div>
+							
+							<a href="#" class="show-hotels__btn btn-blue">Подробнее</a>
+						</div>
+						
+						<div class="btn-container btn-container-right">
+							<div class="btn-container__sign">
+								0т 2000 Р.
+							</div>
+							
+							<a href="#" class="show-hotels__btn btn-brown">Забронировать</a>
+						</div>
+						
+						<div class="rating">
+							<figure class="rating__stars">	
+								<img src="#" alt="Stars">
+							</figure>
+
+							<div class="rating__value">
+								Рейтинг:
+								<span class="evaluation">
+									8,9
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="show-hotels__content">
+						<figure class="show-hotels__logo">
+							<img src="#" alt="Villas at Poco Diablo">
+						</figure>
+						
+						<h2 class="show-hotels__title">
+							Villas at Poco Diablo
+						</h2>
+						
+						<div class="btn-container btn-container-left">
+							<div class="btn-container__sign">
+								Апартаменты
+							</div>
+							
+							<a href="#" class="show-hotels__btn btn-blue">Подробнее</a>
+						</div>
+						
+						<div class="btn-container btn-container-right">
+							<div class="btn-container__sign">
+								0т 4000 Р.
+							</div>
+							
+							<a href="#" class="show-hotels__btn btn-brown">Забронировать</a>
+						</div>
+						
+						<div class="rating">
+							<figure class="rating__stars">	
+								<img src="#" alt="Stars">
+							</figure>
+
+							<div class="rating__value">
+								Рейтинг:
+								<span class="evaluation">
+									9,2
+								</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 			
 			<footer class="main-footer">
 				<section class="hashtag">
